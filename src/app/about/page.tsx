@@ -1,4 +1,8 @@
+import Image from "next/image";
 import React from "react";
+import img1 from '/public/images/docone.png'
+import img3 from '/public/images/doctwo.png'
+import img2 from '/public/images/docthree.png'
 
 const page = () => {
   return (
@@ -10,15 +14,15 @@ const page = () => {
               <div className="flex items-center -mx-3 sm:-mx-4 p-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
-                    <img src="/images/photo 1.png" alt="photo 1" className="w-full h-auto" />
+                    <Image src={img1} alt="photo 1" className="w-full h-auto" />
                   </div>
                   <div className="py-3 sm:py-4">
-                    <img src="/images/photo2.png" alt="photo2" className="w-full h-auto" />
+                    <Image src={img2} alt="photo 1" className="w-full h-auto" />
                   </div>
                 </div>
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
-                    <img src="/images/photo3.png" alt="photo3" className="w-full h-auto" />
+                    <Image src={img3} alt="photo 1" className="w-full h-auto" />
                   </div>
                 </div>
               </div>
