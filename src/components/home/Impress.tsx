@@ -77,7 +77,7 @@ const Impress = () => {
                         </div>
 
 
-                        <div className='w-full'>
+                        <div className='w-full overflow-auto h-4/6'>
 
                             <ul role="list" className="divide-y divide-gray-100">
                                 <li className="flex justify-between gap-x-6 py-5">
@@ -110,6 +110,36 @@ const Impress = () => {
                                     </div>
                                 </li>
 
+                                <li className="flex justify-between gap-x-6 py-5">
+                                    <div className="flex min-w-0 gap-x-4">
+                                        <img className="size-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <div className="min-w-0 flex-auto">
+                                            <p className="text-sm/6 font-semibold text-gray-900">kate bishop</p>
+                                            <p className="mt-1 truncate text-xs/5 text-gray-500">kate.bishop@kmy.com</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li className="flex justify-between gap-x-6 py-5">
+                                    <div className="flex min-w-0 gap-x-4">
+                                        <img className="size-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <div className="min-w-0 flex-auto">
+                                            <p className="text-sm/6 font-semibold text-gray-900">kate bishop</p>
+                                            <p className="mt-1 truncate text-xs/5 text-gray-500">kate.bishop@kmy.com</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li className="flex justify-between gap-x-6 py-5">
+                                    <div className="flex min-w-0 gap-x-4">
+                                        <img className="size-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <div className="min-w-0 flex-auto">
+                                            <p className="text-sm/6 font-semibold text-gray-900">kate bishop</p>
+                                            <p className="mt-1 truncate text-xs/5 text-gray-500">kate.bishop@kmy.com</p>
+                                        </div>
+                                    </div>
+                                </li>
+
 
                             </ul>
 
@@ -120,9 +150,9 @@ const Impress = () => {
 
                 </div>
 
-                <div className="mx-auto lg:mx-0 max-w-2xl lg:text-left lg:p-6 text-center">
+                <div className="mx-auto lg:mx-0 max-w-2xl lg:max-w-6xl lg:text-left lg:p-6 text-center">
 
-                    <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+                    <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-8xl">
                         AI powered consumer <span className='text-green-500 font-serif italic font-normal'>health</span> Platform
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600">

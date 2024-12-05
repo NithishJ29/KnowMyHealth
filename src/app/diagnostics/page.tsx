@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import Image from 'next/image';
 
 type DiagnosticTest = {
   name: string;
@@ -16,13 +17,11 @@ const DiagnosticsPage = () => {
   const [locationQuery, setLocationQuery] = useState('');
 
   const tests: DiagnosticTest[] = [
-    { name: 'MRI', price: '₹3000', address: 'Bangalore, Center A', image: '/images/mri.png', time: '10:00 AM' },
-    { name: 'CT Scan', price: '₹2500', address: 'Bangalore, Center B', image: '/images/ct-scan.png', time: '11:00 AM' },
-    { name: 'Blood Test', price: '₹500', address: 'Bangalore, Center C', image: '/images/blood-test.png', time: '9:00 AM' },
-    { name: 'X-Ray', price: '₹800', address: 'Bangalore, Center D', image: '/images/x-ray.png', time: '1:00 PM' },
-    { name: 'Ultrasound', price: '₹1200', address: 'Bangalore, Center E', image: '/images/ultrasound.png', time: '2:00 PM' },
-    { name: 'ECG', price: '₹700', address: 'Bangalore, Center F', image: '/images/ecg.png', time: '3:00 PM' },
-    { name: 'Echocardiogram', price: '₹2000', address: 'Bangalore, Center G', image: '/images/echocardiogram.png', time: '4:00 PM' },
+    { name: 'MRI', price: '₹3000', address: 'Bangalore, Center A', image: '/images/diagnostics/mri.jpg', time: '10:00 AM' },
+    { name: 'CT Scan', price: '₹2500', address: 'Bangalore, Center B', image: '/images/diagnostics/ct.jpg', time: '11:00 AM' },
+    { name: 'Blood Test', price: '₹500', address: 'Bangalore, Center C', image: '/images/diagnostics/blood.jpg', time: '9:00 AM' },
+    { name: 'X-Ray', price: '₹800', address: 'Bangalore, Center D', image: '/images/diagnostics/xray.jpg', time: '1:00 PM' },
+    { name: 'Ultrasound', price: '₹1200', address: 'Bangalore, Center E', image: '/images/diagnostics/ecg.jpg', time: '2:00 PM' },
   ];
 
   const filteredTests = tests.filter((test) => {
@@ -67,7 +66,13 @@ const DiagnosticsPage = () => {
             onClick={() => setSelectedTest(test)}
           >
             <figure>
-              <img src={test.image} alt={test.name} className="h-40 object-cover" />
+              <Image
+                src={test.image}
+                alt={test.name}
+                width={400}
+                height={200}
+                className="h-40 object-cover w-full"
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">{test.name}</h2>
@@ -82,9 +87,11 @@ const DiagnosticsPage = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
             <div className="flex flex-col md:flex-row gap-4">
-              <img
+              <Image
                 src={selectedTest.image}
                 alt={selectedTest.name}
+                width={500}
+                height={300}
                 className="w-full md:w-1/2 object-cover rounded-md"
               />
               <div>

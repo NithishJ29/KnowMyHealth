@@ -34,6 +34,14 @@ const Propone = [
         imageSrc: Prop4,
         imageAlt: "Find Doctors Near You",
     },
+    {
+        id: 2,
+        sub: 'cold, cough & fever',
+        href: '#',
+        imageSrc: Prop2,
+        imageAlt: "Find Doctors Near You",
+    },
+    
 ];
 
 export default function PropOne() {

@@ -14,7 +14,7 @@ const PromotionOne = () => {
     return (
         <div className="flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto py-10">
             {/* Circle with centered text and button */}
-            <div className="w-full p-2 md:w-2/6 h-80 bg-zinc-50 text-primary-foreground rounded-full mb-8 md:mb-0 flex flex-col items-center justify-center text-center">
+            <div className="w-full p-2 md:w-2/6 h-80 bg-zinc-200 text-primary-foreground rounded-full mb-8 md:mb-0 flex flex-col items-center justify-center text-center">
                 <h1 className="text-xl font-semibold mb-4">Give the care your family deserves</h1>
                 <button className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-all">
                     Get Started
