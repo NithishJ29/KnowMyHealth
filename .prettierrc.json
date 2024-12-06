@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "trailingComma": "es5",
   "tabWidth": 2,
@@ -5,3 +6,12 @@
   "singleQuote": false,
   "embeddedLanguageFormatting": "auto"
 }
+=======
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": false,
+  "embeddedLanguageFormatting": "auto"
+}
+>>>>>>> 906d4111242898be760e4f4ac5ff6854ba6d62e1

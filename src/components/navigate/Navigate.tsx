@@ -6,7 +6,10 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Drawer from "./Drawer";
 import Logo from '/public/images/logo.png'
 import Image from "next/image";
+<<<<<<< HEAD
 import { MagnifyingGlassIcon, MapPinIcon } from '@heroicons/react/24/outline';
+=======
+>>>>>>> 906d4111242898be760e4f4ac5ff6854ba6d62e1
 
 const mainmenus = [
   { label: "Home", href: "/" },
@@ -27,6 +30,7 @@ export default async function Navigate() {
     : null;
 
   return (
+<<<<<<< HEAD
     <nav className="flex items-center justify-between lg:p-6 px-3">
 
       <Image src={Logo} width={80} height={60} alt="know my health" />
@@ -55,6 +59,29 @@ export default async function Navigate() {
       </div>
 
       <div>
+=======
+    <nav className="navbar bg-base-100">
+      {/* Logo and main navigation */}
+      <div className="flex-1 items-center">
+        <div className="flex items-center">
+          <Image src={Logo} width={60} height={60} alt="know my health"/>
+          <a href="/" className="btn btn-ghost text-xl">
+            Know My Health
+          </a>
+        </div>
+        <div className="hidden lg:flex">
+          <ul className="menu menu-horizontal space-x-0">
+            {mainmenus.map((item) => (
+              <li key={item.label}>
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="flex-none">
+>>>>>>> 906d4111242898be760e4f4ac5ff6854ba6d62e1
         {!await isAuthenticated() ? (
           <div className="p-1">
             <LoginLink className="btn btn-primary">Get Started</LoginLink>

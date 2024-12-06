@@ -28,6 +28,7 @@ const menuData = {
 const Base = () => {
   return (
     <footer className="bg-zinc-50">
+<<<<<<< HEAD
 
       <div className="container mx-auto p-0 md:p-8 xl:px-0">
       <p className='text-4xl font-semibold px-10 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-cyan-500 '>what our users <br></br> have to say</p>
@@ -36,6 +37,10 @@ const Base = () => {
       
         <div className="mx-auto max-w-7xl px-6 pb-10 pt-16">
           
+=======
+      <div className="container mx-auto p-0 md:p-8 xl:px-0">
+        <div className="mx-auto max-w-7xl px-6 pb-10 pt-16">
+>>>>>>> 906d4111242898be760e4f4ac5ff6854ba6d62e1
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-4">
               <div>

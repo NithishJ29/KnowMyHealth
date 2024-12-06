@@ -1,8 +1,12 @@
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
 @tailwind utilities;
 
 .scrolly {
     -ms-overflow-style: none; 
     scrollbar-width: none; 
 }
+=======
+@tailwind utilities;
+>>>>>>> 906d4111242898be760e4f4ac5ff6854ba6d62e1

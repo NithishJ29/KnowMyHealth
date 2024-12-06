@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 {
     "build": {
       "env": {
         "NODE_VERSION": "18"
       }
     }
+=======
+{
+    "build": {
+      "env": {
+        "NODE_VERSION": "18"
+      }
+    }
+>>>>>>> 906d4111242898be760e4f4ac5ff6854ba6d62e1
   }
